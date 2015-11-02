@@ -16,6 +16,7 @@ author:
 
 google_analytics: 'UA-69553422-1'
 
+gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 paginate: 5
