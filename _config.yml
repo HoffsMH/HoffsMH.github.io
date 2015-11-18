@@ -18,5 +18,5 @@ google_analytics: 'UA-69553422-1'
 
 gems: [jekyll-paginate]
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 paginate: 5
