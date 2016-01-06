@@ -5,7 +5,6 @@ gem 'bundler'
 gem 'jekyll'
 
 gem 'rack'
-gem 'rack-jekyll'
 
 gem 'kramdown'
 gem 'redcarpet'
