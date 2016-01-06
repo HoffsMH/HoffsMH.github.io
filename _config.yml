@@ -20,3 +20,4 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: redcarpet
 paginate: 5
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
