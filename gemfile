@@ -4,14 +4,13 @@ ruby '2.2.2'
 gem 'bundler'
 gem 'jekyll'
 
+gem 'rack'
+gem 'rack-jekyll'
+
 gem 'kramdown'
 gem 'redcarpet'
 gem 'rouge'
 gem 'jekyll-watch'
 
 gem "jekyll-paginate"
-gem 'foreman'
-
-gem 'rack-contrib'
 gem 'rake'
-gem 'thin'
