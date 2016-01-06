@@ -10,5 +10,8 @@ gem 'rouge'
 gem 'jekyll-watch'
 
 gem "jekyll-paginate"
+gem 'foreman'
 
-gem "rack-jekyll"
+gem 'rack-contrib'
+gem 'rake'
+gem 'thin'
