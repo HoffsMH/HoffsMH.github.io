@@ -40,6 +40,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
+  jekyll
   jekyll-paginate
   jekyll-watch
   kramdown
