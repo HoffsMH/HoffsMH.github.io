@@ -5,6 +5,6 @@ subtitle: Must Increase Effectiveness!
 permalink: /about/
 ---
 
-Hi, My name is Matthew Hecker. I'm a junior dev.
+Hi, My name is Matthew Hecker. I am a web Developer.
 
-learning about rails, DevOps, empathy and videogames.
+I am learning about Rails, JavaScript, Devops and empathy.
