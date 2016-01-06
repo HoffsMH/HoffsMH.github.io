@@ -8,3 +8,5 @@ gem 'rouge'
 gem 'jekyll-watch'
 
 gem "jekyll-paginate"
+
+gem "rack-jekyll"
