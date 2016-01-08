@@ -1,10 +1,11 @@
 # Site settings
+destination: ../../public/blog
 title: HoffsMH
 description: >
   Small blog for me, the junior developer
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://HoffsMH.github.io" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://mhecker/blog" # the base hostname & protocol for your site
 paginate_path: "blog/page:num"
 permalink: blog/:title/
 
