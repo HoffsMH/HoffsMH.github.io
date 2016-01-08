@@ -4,9 +4,7 @@ ruby '2.2.2'
 gem 'bundler'
 gem 'jekyll'
 
-gem 'rack'
-
-gem 'kramdown'
+# gem 'kramdown'
 gem 'redcarpet'
 gem 'rouge'
 gem 'jekyll-watch'
