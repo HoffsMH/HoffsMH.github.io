@@ -23,7 +23,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
-    rack (1.6.4)
     rake (10.4.2)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
@@ -41,8 +40,6 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   jekyll-watch
-  kramdown
-  rack
   rake
   redcarpet
   rouge
