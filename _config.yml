@@ -1,7 +1,7 @@
 # Site settings
 title: HoffsMH
 description: >
-  Small blog for me, the junior developer
+  Small blog for me, the learning web developer
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://HoffsMH.github.io" # the base hostname & protocol for your site
