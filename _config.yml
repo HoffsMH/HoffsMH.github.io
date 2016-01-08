@@ -1,5 +1,5 @@
 # Site settings
-destination: ../../public/blog
+destination: public/blog
 title: HoffsMH
 description: >
   Small blog for me, the learning web developer
