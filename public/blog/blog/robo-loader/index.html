@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Robo-loader — A small venture into javascript canvas game making &raquo;  HoffsMH</title>
+<meta name="description" content="Small blog for me, the learning web developer
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://mhecker.com/blog/blog/robo-loader/">
+        
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Robo-loader" />
+<meta name="twitter:description" content="Small blog for me, the learning web developer
+" />
+<meta name="twitter:image" content="http://mhecker.com/blog" />
+
+<!-- Google plus -->
+<meta name="author" content="">
+<link rel="author" href="">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robo-loader">
+<meta property="og:description" content="Small blog for me, the learning web developer
+">
+<meta property="og:url" content="http://mhecker.com/blog/blog/robo-loader/">
+<meta property="og:site_name" content="HoffsMH">
+
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/blog/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/blog/css/main.css">
+<link rel="stylesheet" href="/blog/assets/vendor/highlight/styles/solarized_dark.css">
+<link rel="stylesheet" href="/blog/assets/vendor/font-awesome/css/font-awesome.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">HoffsMH</a>
+
+        <ul class="menu">
+            <li class="menu__entry"><a href="/blog/about">About</a></li>
+            <li class="menu__entry"><a href="/blog/">Blog</a></li>
+        </ul>
+    </div>
+
+    <ul class="social-links">
+        
+            <a href="https://github.com/HoffsMH" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        
+
+        
+    </ul>
+</header>
+
+            <h1 class="page-title post-title">
+    <div class="page-title__text post-title__text">Robo-loader</div>
+    <div class="page-title__subtitle post-title__subtitle">A small venture into javascript canvas game making</div>
+</h1>
+
+<div class="content">
+    <p><a href="https://github.com/HoffsMH/robo-loader">Github</a><br>
+<a href="/robo-loader">Demo</a></p>
+
+<p>A common thing seen in video games is that parts of their mechanics can be seen as modular and a game all in and of themselves.
+A real life example of this might be that you are walking down the street while trying to go somewhere (the game as a whole), and
+you have to watch your feet and avoid stepping on cracks(mini-game).</p>
+
+<h4>So I really like World of Warcraft.</h4>
+
+<p>And WoW has such a mini-game.
+Game balancing also really interest me too
+so I tried to distill the basic mechanics of this of this mini-game into a javascript canvas game. so I could turn some knobs and see how they affect the way it plays.</p>
+
+<h5>The things I was interested in were:</h5>
+
+<ul>
+<li>pacing</li>
+<li>difficulty</li>
+<li>depth</li>
+</ul>
+
+<p>The game can be played <a href="/robo-loader">here</a>. Please note the game might look different now than at the time of this post but the basic mechanics will still be in place.</p>
+
+<h3>Basics:</h3>
+
+<p>You are a robot that works in a factory that has a number of horizontal Lanes( 4 in this picture). Inside of each is a &quot;conveyor belt&quot; with a number of cells. The cells move to the right and carry whatever is placed on them.</p>
+
+<p><img src="images/tutorial/basic-game.gif" alt="basic game"></p>
+
+<p>On the left side of the screen is a &quot;Loading Area&quot; where we can put a certain amount of &quot;material&quot; down on a given Conveyor Belt.</p>
+
+<p><img src="images/tutorial/red-3-game.gif" alt="red 3"></p>
+
+<p>Here we just put down 3 red blobs worth of material. The numbers on the left mean that the next time we put down a red material on that lane we will only put down 2 blobs worth of red material.</p>
+
+<p>Lets look at the next game mechanic...</p>
+
+<p><img src="images/tutorial/workers-intro-game.gif" alt="workers intro"></p>
+
+<p>The white boxes represent the workers in this factory. The workers will move to the left while they have nothing to work on. If a single worker reaches the loading area the game is over.</p>
+
+<p>By putting down material on a conveyor belt for a lane worker to work on you impede its progress towards the loading area.</p>
+
+<p><img src="images/tutorial/blob-intro.gif" alt="blob intro"></p>
+
+<p>You might have noticed that there are 2 sets of numbers on the left. The big number, as I mentioned before, represents how many blobs of material you would place on the given conveyor belt if you were to press enter. The second smaller set of numbers is a counter that counts down till you can place the maximum amount of blobs again.</p>
+
+<p>For instance I see the number 3, and the color green, and I have the fourth lane selected, I press enter and... 3 green blobs are placed on the first lane and then I see 2 and a counters starts counting down from 35 seconds. That means that after 35 seconds have passed the counter reset and I will be able to place 3 green blobs at a time on that lane.</p>
+
+<p>We are now approaching the center of what this game is really about, managing diminishing returns. Something that has a diminishing return means I get a decreased effect from doing the same thing repeatedly. In order to keep the workers from getting to the left side of the screen I need to think about what lanes and color combinations are available to me at a given time.</p>
+
+<p>For instance I might be out of yellow blobs on lane 1 but I have plenty red blobs left on that lane, and I might be out of red blobs on lane 2 but I have plenty of yellow blobs left on that lane. A few seconds later that situation may reverse and I have to keep track of that.</p>
+
+<h4>One more thing:</h4>
+
+<p>Lets say that all conveyor belts have 12 cells on which we can place blobs. If I put a Yellow blob on cell 1 of lane 2 that means that all other lanes&#39;s cell 1 are cleared of yellow blobs. If I put a yellow blob on lane 1 and immediately afterwards put a yellow blob on lane 2 the yellow blob on lane 1 will disappear.</p>
+
+<p>When taken together the game is about juggling different colors on different lanes in order to keep the workers from reaching the end.</p>
+
+<p>pic of average gameplay here</p>
+
+<h4>Tweaking it:</h4>
+
+<p>I tried to write this in such a way that changing certain aspects of the game would be easy. I did this by creating engines that would update and render the game  generically, regardless of their structure or settings. I then created a default settings file called <code>lib/game-settings/board-settings</code> that contained everything about the game that could be changed. All of the game component&#39;s properties were set by the contents of this file so that if I wanted to change something like
+* amount of lanes
+* amount of cells to a lane
+* how long before diminsing returns reset
+* how fast workers moved up the lane
+* how long it took for a worker to clear a single blob</p>
+
+<h4>Lessons learned:</h4>
+
+<p>It was surprisingly easy to balance! the hard part was to end</p>
+
+</div>
+
+<div class="about">
+    <div class="about__devider">*****</div>
+    <div class="about__text">
+        Written by <strong>  Matthew Hecker </strong>
+        on <strong>11 February 2016</strong>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="/blog/assets/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+        
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69553422-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    </body>
+</html>
