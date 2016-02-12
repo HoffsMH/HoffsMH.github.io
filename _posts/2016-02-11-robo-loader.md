@@ -10,6 +10,8 @@ This post is about a game I made with javascript canvas. In the game you play as
 
 ---
 
+## Intro
+
 A common thing seen in video games is that parts of their mechanics can be seen as modular and a game all in and of themselves.
 A real life example of this might be that you are walking down the street while trying to go somewhere (the game as a whole), and
 you have to watch your feet and avoid stepping on cracks(mini-game).
@@ -54,7 +56,8 @@ You might have noticed that there are 2 sets of numbers on the left. The big num
 
 For instance I see the number 3, and the color green, and I have the fourth lane selected, I press enter and... 3 green blobs are placed on the first lane and then I see 2 and a counters starts counting down from 35 seconds. That means that after 35 seconds have passed the counter reset and I will be able to place 3 green blobs at a time on that lane.
 
-We are now approaching the center of what this game is really about, managing diminishing returns. Something that has a diminishing return means I get a decreased effect from doing the same thing repeatedly. In order to keep the workers from getting to the left side of the screen I need to think about what lanes and color combinations are available to me at a given time.
+#### We are now approaching the center of what this game is really about...
+ managing diminishing returns. Something that has a diminishing return means I get a decreased effect from doing the same thing repeatedly. In order to keep the workers from getting to the left side of the screen I need to think about what lanes and color combinations are available to me at a given time.
 
 For instance I might be out of yellow blobs on lane 1 but I have plenty red blobs left on that lane, and I might be out of red blobs on lane 2 but I have plenty of yellow blobs left on that lane. A few seconds later that situation may reverse and I have to keep track of that.
 

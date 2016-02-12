@@ -5,17 +5,18 @@ subtitle: "How I made it work for me"
 date:   2015-11-29
 categories: [tool, productivity]
 ---
+Up until relatively recently I had not been embracing the "programmers notebook". But it has a hold on me now.
+I plan to go over what changed and how I got into the note-taking groove.
+I also plan to go into why, in my opinion, pen and paper actually trumps all the other tools and mediums for note taking, even when, and perhaps especially when
+the subject is software design.
 
-## Programming Notebook
+---
 
 So upon coming into Turing we were told that keeping a notebook was a good idea.
 I had already kept a programming notebook on and off  before but I couldn't force myself
 to use it in a meaningful way.
 
-Up until relatively recently I had not been embracing the "programmers notebook". But it has a hold on me now.
-I plan to go over what changed and how I got into the note-taking groove.
-I also plan to go into why, in my opinion, pen and paper actually trumps all the other tools and mediums for note taking, even when, and perhaps especially when
-the subject is software design. A lot of it has to do with taking notes on things that have nothing to do with software development. So before we start I want to say that there are still a number of software tools that I type text into to organize some aspect of my life. So if something seems weird to you later on keep in mind that
+A lot of it has to do with taking notes on things that have nothing to do with software development. So before we start I want to say that there are still a number of software tools that I type text into to organize some aspect of my life. So if something seems weird to you later on keep in mind that
 
 I use
 
