@@ -28,23 +28,23 @@ The game can be played [here](/robo-loader). Please note the game might look dif
 ### Basics:
 You are a robot that works in a factory that has a number of horizontal Lanes( 4 in this picture). Inside of each is a "conveyor belt" with a number of cells. The cells move to the right and carry whatever is placed on them.
 
-![basic game](images/tutorial/basic-game.gif)
+![basic game](../images/robo-loader/basic-game.gif)
 
 On the left side of the screen is a "Loading Area" where we can put a certain amount of "material" down on a given Conveyor Belt.
 
-![red 3](images/tutorial/red-3-game.gif)
+![red 3](../images/tutorial/red-3-game.gif)
 
  Here we just put down 3 red blobs worth of material. The numbers on the left mean that the next time we put down a red material on that lane we will only put down 2 blobs worth of red material.
 
  Lets look at the next game mechanic...
 
- ![workers intro](images/tutorial/workers-intro-game.gif)
+ ![workers intro](../images/tutorial/workers-intro-game.gif)
 
  The white boxes represent the workers in this factory. The workers will move to the left while they have nothing to work on. If a single worker reaches the loading area the game is over.
 
 By putting down material on a conveyor belt for a lane worker to work on you impede its progress towards the loading area.
 
- ![blob intro](images/tutorial/blob-intro.gif)
+ ![blob intro](../images/tutorial/blob-intro.gif)
 
 You might have noticed that there are 2 sets of numbers on the left. The big number, as I mentioned before, represents how many blobs of material you would place on the given conveyor belt if you were to press enter. The second smaller set of numbers is a counter that counts down till you can place the maximum amount of blobs again.
 
