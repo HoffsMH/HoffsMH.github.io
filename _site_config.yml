@@ -1,0 +1,23 @@
+# Site settings
+# ++++
+title: HoffsMH
+description: >
+  Small blog for me, the learning web developer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://HoffsMH.github.io" # the base hostname & protocol for your site
+paginate_path: "blog/page:num"
+permalink: blog/:title/
+
+author:
+  fullname: Matthew Hecker
+  github: HoffsMH
+  # twitter:
+  # disqus: your_disqus_username
+
+google_analytics: 'UA-69553422-1'
+
+gems: [jekyll-paginate]
+# Build settings
+markdown: redcarpet
+paginate: 5
+exclude: ['vendor']
