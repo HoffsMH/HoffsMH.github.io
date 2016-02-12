@@ -5,7 +5,7 @@ title: HoffsMH
 description: >
   Small blog for me, the learning web developer
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://HoffsMH.github.io" # the base hostname & protocol for your site
+url: "http://www.mhecker.com" # the base hostname & protocol for your site
 paginate_path: "/page:num"
 permalink: "/:title/"
 
@@ -21,4 +21,23 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: redcarpet
 paginate: 5
-exclude: ['vendor']
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

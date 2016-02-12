@@ -6,12 +6,16 @@ date:   2016-02-11
 categories: [coding, gaming]
 ---
 
-[Github](https://github.com/HoffsMH/robo-loader)  
-[Demo](/robo-loader)
+This post is about a game I made with javascript canvas. In the game you play as a robot who's job it is to put stuff on conveyor belts for puny humans to work on. The whole thing was an effort to understand some of the basics of design and balancing.
+
+---
 
 A common thing seen in video games is that parts of their mechanics can be seen as modular and a game all in and of themselves.
 A real life example of this might be that you are walking down the street while trying to go somewhere (the game as a whole), and
 you have to watch your feet and avoid stepping on cracks(mini-game).
+
+[Github](https://github.com/HoffsMH/robo-loader)  
+[Demo](/robo-loader)
 
 #### So I really like World of Warcraft.
 And WoW has such a mini-game.

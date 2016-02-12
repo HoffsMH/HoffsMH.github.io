@@ -2,7 +2,7 @@
 layout: post
 title:  "Pry neato's"
 subtitle: "Fun with pry!"
-date:   2014-08-19 23:56:45
+date:   2015-08-19 23:56:45
 categories: [tool]
 ---
 
