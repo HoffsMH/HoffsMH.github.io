@@ -32,19 +32,19 @@ You are a robot that works in a factory that has a number of horizontal Lanes( 4
 
 On the left side of the screen is a "Loading Area" where we can put a certain amount of "material" down on a given Conveyor Belt.
 
-![red 3](../images/tutorial/red-3-game.gif)
+![red 3](../images/robo-loader/red-3-game.gif)
 
  Here we just put down 3 red blobs worth of material. The numbers on the left mean that the next time we put down a red material on that lane we will only put down 2 blobs worth of red material.
 
  Lets look at the next game mechanic...
 
- ![workers intro](../images/tutorial/workers-intro-game.gif)
+ ![workers intro](../images/robo-loader/workers-intro-game.gif)
 
  The white boxes represent the workers in this factory. The workers will move to the left while they have nothing to work on. If a single worker reaches the loading area the game is over.
 
 By putting down material on a conveyor belt for a lane worker to work on you impede its progress towards the loading area.
 
- ![blob intro](../images/tutorial/blob-intro.gif)
+ ![blob intro](../images/robo-loader/blob-intro.gif)
 
 You might have noticed that there are 2 sets of numbers on the left. The big number, as I mentioned before, represents how many blobs of material you would place on the given conveyor belt if you were to press enter. The second smaller set of numbers is a counter that counts down till you can place the maximum amount of blobs again.
 
@@ -61,7 +61,7 @@ Lets say that all conveyor belts have 12 cells on which we can place blobs. If I
 When taken together the game is about juggling different colors on different lanes in order to keep the workers from reaching the end.
 
 
-![average game](../images/tutorial/average-game.gif)
+![average game](../images/robo-loader/average-game.gif)
 
 #### Tweaking it:
 I tried to write this in such a way that changing certain aspects of the game would be easy. I did this by creating engines that would update and render the game  generically, regardless of their structure or settings. I then created a default settings file called ```lib/game-settings/board-settings``` that contained everything about the game that could be changed. All of the game component's properties were set by the contents of this file so that if I wanted to change something like
