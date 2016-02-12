@@ -60,7 +60,8 @@ Lets say that all conveyor belts have 12 cells on which we can place blobs. If I
 
 When taken together the game is about juggling different colors on different lanes in order to keep the workers from reaching the end.
 
-pic of average gameplay here
+
+![average game](../images/tutorial/average-game.gif)
 
 #### Tweaking it:
 I tried to write this in such a way that changing certain aspects of the game would be easy. I did this by creating engines that would update and render the game  generically, regardless of their structure or settings. I then created a default settings file called ```lib/game-settings/board-settings``` that contained everything about the game that could be changed. All of the game component's properties were set by the contents of this file so that if I wanted to change something like
