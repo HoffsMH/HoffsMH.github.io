@@ -4,7 +4,7 @@ destination: "../mhecker.comv2/public/blog"
 title: HoffsMH
 description: >
   Small blog for me, the learning web developer
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://HoffsMH.github.io" # the base hostname & protocol for your site
 paginate_path: "/page:num"
 permalink: "/:title/"
